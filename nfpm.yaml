@@ -13,8 +13,12 @@ contents:
     dst: /usr/bin/logtail
     file_info:
       mode: 0755
+  - src: /usr/bin/logtail
+    dst: /usr/bin/logtail2
+    type: symlink
 
 rpm:
   group: Applications/System
   compression: lzma
-  summary: Log file processing utility 
+  summary: Log file processing utility
+
