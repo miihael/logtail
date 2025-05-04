@@ -1,0 +1,20 @@
+name: logtail
+version: 0.1.0
+description: Utility for reading log files and tracking their offsets
+homepage: https://github.com/miihael/logtail
+license: MIT
+maintainer: Mikhail Anisimov <manisimov@nvidia.com>
+
+arch: amd64
+platform: linux
+
+contents:
+  - src: target/release/logtail
+    dst: /usr/bin/logtail
+    file_info:
+      mode: 0755
+
+rpm:
+  group: Applications/System
+  compression: lzma
+  summary: Log file processing utility 
